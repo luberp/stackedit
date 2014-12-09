@@ -71,6 +71,11 @@ define([], function() {
 		constants.GATEKEEPER_URL = "https://stackedit-gatekeeper-insomnia.herokuapp.com/";
 		constants.TUMBLR_PROXY_URL = "https://stackedit-tumblr-proxy-beta.herokuapp.com/";
 	}
+	else if(location.hostname.indexOf("mon.xpecto.de") === 0) {
+		constants.BASE_URL = "http://mon.xpecto.de:3000/";
+		constants.GATEKEEPER_URL = "http://mon.xpecto.de:9999/";
+		constants.GITHUB_CLIENT_ID = 'fed96573b171ac2ed82e';
+	}
 
 	constants.THEME_LIST = {
 		"blue": "Blue",
